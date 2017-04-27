@@ -61,4 +61,33 @@ var res =
     "completed": true
   }
   ]
-  
+
+/*var taskInput = document.getElementById("newTask");
+var addButton = document.getElementsByClassName("button")[0];
+
+var resultado = "";
+for (var i = 1; i == 9; i++){
+   resultado += (&#8226 + res[i] + \n)
+}
+document.write(resultado + &#8226 + taskInput)*/
+
+function Elementos(userId, id, title, completed){
+  this.userId = userId,
+  this.id = id,
+  this.title = title,
+  this.completed = completed
+  this.sumar = function(){
+    
+ }
+};
+
+res.forEach(function(lista){
+   document.write("<li>" + lista.title + "</li>"
+    )})
+
+function getTask(){
+  var input = document.getElementById("tarea");
+  var contTask = document.getElementsByClassName("tarealist");
+  contTask[0].innerHTML += resultado + "<ul><li>" + input.value + "<br>";
+  input.value = "";
+}

@@ -2,18 +2,26 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Lista de Tareas</title>
+	<title>TODO</title>
 </head>
 <body>
-	<h1>Lista de Tareas</h1>
+
+	<h1>Lista de tareas</h1>
+	<div id="contenedor-tareas">
+		
 	<hr>
-	<div id = "contenedor">
-	</div>
 
-	<button id="newTask" type="button" name="button">Añadir nueva Tarea</button>
-      <button id="print" type="button" name="button">Mostrar todas mis tareas</button>
+	<label for="tarea">Agregar Tarea</label>
+	<input type="tarea" id="tarea">
 
+	<a href="#" id="getTarea" onclick="getTask()">
+		Agregar
+	</a>
 
+	<div class="tarealist"></div>
 
+	
+	<div id = "records" style="margin-top: 25px"></div>
+	<script src="assets/js/main.js"></script>
 </body>
 </html>
